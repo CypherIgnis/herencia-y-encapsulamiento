@@ -1,4 +1,4 @@
-class Worker:
+class Programmer:
   
     company_name='Sodimac'
     company_domain='@sodimac.cl'
@@ -13,7 +13,7 @@ class Worker:
     def print_info(self):
         return print("Te damos la bienvenida a ",self.company_name," ",self.first_name,' ',self.last_name,'Y su correo laboral es',self.mail)
 
-class Developer(Worker):
+class Chief(Programmer):
     def __init__(self,id,first_name,last_name,language):
         super().__init__(id,first_name,last_name)        
         self.language = language
